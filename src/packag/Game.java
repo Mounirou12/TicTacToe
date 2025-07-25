@@ -4,6 +4,7 @@ import java.awt.Color;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
@@ -17,8 +18,8 @@ public class Game implements ActionListener {
     JPanel gamePanel;
     Button[] gameButton = new Button[9];
     boolean player = true;
-   // ImageIcon oIcon = new ImageIcon(getClass().getResource("/packag/Image/O.jpeg"));
-    //ImageIcon xIcon = new ImageIcon(getClass().getResource("/packag/Image/X.png"));
+    ImageIcon oIcon = new ImageIcon(getClass().getResource("/packag/Image/O.jpeg"));
+    ImageIcon xIcon = new ImageIcon(getClass().getResource("/packag/Image/X.png"));
 
     public Game() {
         infosGame = new JLabel("ghdjhf");
